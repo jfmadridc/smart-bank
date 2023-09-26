@@ -1,9 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 import logo from "../../assets/images/logo.svg";
+
+const StyledHeader = styled.header`
+	background-color: #41d3be;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15vw;
+	height: 10vh;
+	align-items: center;
+`;
 
 const Header = () => {
 	return (
-		<div className="header">
+		<StyledHeader>
 			<img className="imagen-logo" src={logo} alt="Logo Smart Bank" />
 			<div>
 				<a className="btn-secundario" href="https://google.com">
@@ -13,7 +23,7 @@ const Header = () => {
 					Log Out
 				</a>
 			</div>
-		</div>
+		</StyledHeader>
 	);
 };
 

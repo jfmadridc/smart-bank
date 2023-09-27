@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Icono, Box, Btn, Saldo, Detalle } from "../UI";
+import { Icono, Box, Btn, Saldo, Detalle, IconoTema } from "../UI";
 
 import privado from "../../assets/images/privado.svg";
 import ojo from "../../assets/images/ojo.svg";
@@ -22,7 +22,7 @@ const Account = () => {
 			<h2>Account</h2>
 			<div style={{ fontSize: "26px", padding: "20px 0" }}>
 				<span>
-					<Icono src={dinero} alt="Icono de saldo" />
+					<IconoTema src={dinero} alt="Icono de saldo" />
 				</span>
 				Balance Available
 				{toggleState ? (

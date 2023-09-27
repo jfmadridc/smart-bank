@@ -17,17 +17,26 @@ const Logo = styled.img`
 	width: 50px;
 `;
 
+const BtnHeader = styled.a`
+	text-align: center;
+	border-radius: 3px;
+	padding: 5px 20px;
+	margin: 0 10px;
+	font-weight: 600;
+	border: 2px solid white;
+	color: ${(props) => (props.primary ? "white" : colorPrimario)};
+	background: ${(props) => (props.primary ? "transparent" : "white")};
+`;
+
 const Header = () => {
 	return (
 		<StyledHeader>
 			<Logo src={logo} alt="Logo Smart Bank" />
 			<div>
-				<a className="btn-secundario" href="https://google.com">
-					Help
-				</a>
-				<a className="btn-primario" href="https://google.com">
+				<BtnHeader href="https://google.com">Help</BtnHeader>
+				<BtnHeader primary href="https://google.com">
 					Log Out
-				</a>
+				</BtnHeader>
 			</div>
 		</StyledHeader>
 	);

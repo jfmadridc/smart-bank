@@ -21,10 +21,10 @@ const Account = () => {
 		<Box>
 			<h2>Account</h2>
 			<div style={{ fontSize: "26px", padding: "20px 0" }}>
-				Balance Available
 				<span>
 					<Icono src={dinero} alt="Icono de saldo" />
 				</span>
+				Balance Available
 				{toggleState ? (
 					<Saldo>
 						<Detalle>$</Detalle> 8,621.50
